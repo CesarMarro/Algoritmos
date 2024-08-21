@@ -1,6 +1,6 @@
 import time
 
-from bubble_sort import bubble_sort, bubble_sort_optimized
+from sorting.bubble_sort import bubble_sort, bubble_sort_optimized
 
 arr = [5, 2, 4, 6, 1, -7, 3, -100, 99, -97, 98]
 

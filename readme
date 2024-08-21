@@ -1,0 +1,2 @@
+python -m unittest automated_test.py
+(en vez de automated_test.py el nombre del archivo de la prueba)
