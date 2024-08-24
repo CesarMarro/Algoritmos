@@ -21,13 +21,6 @@ def bubble_sort_optimized(arr):
             if arr[j] > arr[j + 1]:
                 sorted = False
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
-    if sorted:
-        return
+        if sorted:
+            return
     return arr
-
-
-unsorted_list = [-2, 45, 0, 11, -9]
-print("Lista desordenada: ", unsorted_list)
-
-sorted_list = bubble_sort(unsorted_list)
-print("lista ordenada: ", sorted_list)
