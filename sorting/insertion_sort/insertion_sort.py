@@ -1,3 +1,7 @@
+from memory_profiler import profile
+
+
+@profile
 def insertion_sort(array):
 
     for i in range(1, len(array)):

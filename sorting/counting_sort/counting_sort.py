@@ -1,3 +1,7 @@
+from memory_profiler import profile
+
+
+@profile
 def counting_sort(arr):
 
     k = max(arr) + 1
