@@ -1,5 +1,5 @@
 import unittest
-from sorting.bubble_sort.bubble_sort import bubble_sort
+from bubble_sort import bubble_sort
 
 
 class TestCountingSort(unittest.TestCase):

@@ -1,5 +1,5 @@
 import unittest
-from sorting.insertion_sort import insertion_sort
+from insertion_sort import insertion_sort
 
 
 class TestCountingSort(unittest.TestCase):
