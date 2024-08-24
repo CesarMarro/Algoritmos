@@ -17,9 +17,11 @@ for _ in range(iterations + 1):
     print("-------------------------NEW ITERATION--------------------")
     print()
     print()
-    best_case = list(range(n))
+
+    # El best case se da cuando la lista esta ordenada
+    best_case = list(i for i in range(n))
     average_case = [random.randint(0, n) for _ in range(n)]
-    worst_case = list(range(n, 0, -1))
+    worst_case = list(i for i in range(n - 1, -1, -1))
 
     start_time = time.time()
     insertion_sort(best_case)

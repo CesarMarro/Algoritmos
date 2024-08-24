@@ -17,9 +17,13 @@ for _ in range(iterations + 1):
     print("-------------------------NEW ITERATION--------------------")
     print()
     print()
-    best_case = list(range(n))  # Already sorted (ascending order)
-    average_case = [random.randint(0, n) for _ in range(n)]  # Random order
-    worst_case = list(range(n, 0, -1))  # Sorted in descending order
+
+    # Ya ordenada
+    best_case = list(range(n))
+    # ordenada aleatoreamente
+    average_case = [random.randint(0, n) for _ in range(n)]
+    # ordenada en orden inverso
+    worst_case = list(range(n, 0, -1))
 
     start_time = time.time()
     merge_sort(best_case)
