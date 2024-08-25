@@ -11,7 +11,7 @@ print()
 
 n = 5000
 increment = 2500
-iterations = 5
+iterations = 4
 
 for _ in range(iterations + 1):
     print("-------------------------NEW ITERATION--------------------")
@@ -25,7 +25,7 @@ for _ in range(iterations + 1):
     average_case = list(random.randint(0, n) for _ in range(n))
 
     # El worst case se da cuando el rango de los numeros es muy alto, cuando se trabaja con numeros grandes
-    worst_case = list(random.randint(0, 10 * n) for _ in range(n))
+    worst_case = list(random.randint(0, 1000 * n) for _ in range(n))
 
     # Best case
     start_time = time.time()

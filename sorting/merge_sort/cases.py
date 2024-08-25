@@ -9,8 +9,8 @@ print()
 print()
 print()
 
-n = 5000
-increment = 2500
+n = 5000000
+increment = 2500000
 iterations = 5
 
 for _ in range(iterations + 1):

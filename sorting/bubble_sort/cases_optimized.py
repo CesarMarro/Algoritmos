@@ -1,4 +1,4 @@
-from bubble_sort import bubble_sort
+from bubble_sort import bubble_sort_optimized
 import time
 import random
 
@@ -30,21 +30,21 @@ for _ in range(iterations + 1):
 
     # Contar el tiempo y correr el best case
     start_time = time.time()
-    bubble_sort(best_case)
+    bubble_sort_optimized(best_case)
     end_time = time.time()
     elapsed_time = end_time - start_time
     print(f"Best case with n={n}: {elapsed_time:.6f} seconds")
 
     # Contar el tiempo y correr el worst case
     start_time = time.time()
-    bubble_sort(worst_case)
+    bubble_sort_optimized(worst_case)
     end_time = time.time()
     elapsed_time = end_time - start_time
     print(f"Worst case with n={n}: {elapsed_time:.6f} seconds")
 
     # Contar el tiempo y correr el avg case
     start_time = time.time()
-    bubble_sort(average_case)
+    bubble_sort_optimized(average_case)
     end_time = time.time()
     elapsed_time = end_time - start_time
     print(f"Average case with n={n}: {elapsed_time:.6f} seconds")

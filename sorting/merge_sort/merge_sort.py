@@ -3,7 +3,6 @@ from memory_profiler import profile
 import math
 
 
-@profile
 def merge(left_arr, right_arr):
     merged = []
     i, j = 0, 0
