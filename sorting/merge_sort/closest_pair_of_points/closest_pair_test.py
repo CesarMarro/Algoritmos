@@ -1,7 +1,6 @@
 import unittest
 from closest_pair import distance
 from closest_pair import brute_force
-from closest_pair import strip_closest
 from closest_pair import closest_pair
 
 
