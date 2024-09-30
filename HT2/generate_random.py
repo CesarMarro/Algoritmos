@@ -9,18 +9,17 @@ with open(audio_path, "rb") as audio_file:
 # Convertir los datos binarios a una lista de enteros
 byte_values = list(audio_data)
 
-# Omitir los primeros 10,000 bytes (ajusta este valor según sea necesario)
+# Omitir los primeros 30,000 bytes
 byte_values = byte_values[30000:]
 
 
-threshold = 100  # Ajusta este umbral según la cantidad de silencio detectado
+# threshold = 100
 
 # Filtrar los valores que están por encima del umbral (ignorar momentos de silencio)
 # filtered_values = [b for b in byte_values if b > threshold]
 
 filtered_values = byte_values
 
-# Mejorar la aleatoriedad combinando pares de bytes consecutivos
 random_numbers = [
     (filtered_values[i] + filtered_values[i + 1]) % 10
     for i in range(0, len(filtered_values) - 1, 2)
