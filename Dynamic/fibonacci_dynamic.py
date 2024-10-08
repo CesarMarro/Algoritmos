@@ -4,6 +4,8 @@ Fibonacci dynamic.
 
 
 def fibonacci(n: int) -> int:
+    if n == 0:
+        return 0
     F = [None] * (n + 1)
     F[0] = 0
     F[1] = 1
