@@ -1,0 +1,30 @@
+Hybrid
+Este código procesa imágenes para determinar el color dominante y contar píxeles transparentes y no transparentes, guardando los resultados en un archivo CSV. Utiliza tanto multithreading como multiprocessing para optimizar el rendimiento.
+
+Implementación de Multithreading y Multiprocessing
+Multithreading:
+
+Uso: Lectura de archivos y escritura del archivo CSV.
+Beneficio: Mejora la eficiencia en operaciones de entrada/salida (E/S) sin bloquear el flujo principal.
+Herramienta: Utiliza ThreadPoolExecutor para manejar hilos.
+Multiprocessing:
+
+Uso: Procesamiento intensivo de imágenes.
+Beneficio: Aprovecha múltiples núcleos de CPU para tareas intensivas en cálculo, evitando la limitación del Global Interpreter Lock (GIL).
+Herramienta: Utiliza ProcessPoolExecutor para manejar procesos.
+Diferencia entre Multithreading y Multiprocessing
+Multithreading:
+
+Ejecuta múltiples hilos dentro de un solo proceso.
+Ideal para operaciones de E/S.
+Limitado por el GIL en tareas intensivas en CPU.
+Multiprocessing:
+
+Ejecuta múltiples procesos independientes.
+Ideal para operaciones intensivas en CPU.
+No está limitado por el GIL, permitiendo verdadero paralelismo en tareas de cálculo.
+
+Optimized: Este codigo es el mismo que hybrid pero solamente utilizando Multiprocessing
+
+notOtpimized: Este codigo es la primera instancia en donde el procesamiento paralelo es mas lento y 
+se dejó ya que será util en la presentación acerca de como funciona
